@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kakao Talk Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>21:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+
+        <div class="screen-header__icons">
+            <span>
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+            </span>
+            <span>
+                <i class="fa-solid fa-music fa-lg"></i>
+            </span>
+            <span>
+                <i class="fa-solid fa-gear fa-lg"></i>
+            </span>
+        </div>
+    </header>
+
+    <a id="friends-display-link">
+        <i class="fa-solid fa-circle-info"></i> Friends' Names Display <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPCg4NDQ0PDQ8NDgoPDg4QDQ8NDg0SFREWFhURExMYHSggGBslGxMTITEhJSkrLi4uIx8zODMtNygtLisBCgoKDg0OGBAPFyseHR83LSstNy4rKy0rLS0tNy0rLS0tLSs3LSsrLy0tKy0tNys3Ky0tLSsrKys3KysrNystK//AABEIAOAA4QMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAAAQUCAwQG/8QAMRABAAIAAwUFBwQDAAAAAAAAAAECAwQRBRIhMUEyUVJhcSJygZGhscEzQpLRFCPh/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAEDAgQF/8QAHhEBAQEBAAMAAwEAAAAAAAAAAAECEQMxQRIhURP/2gAMAwEAAhEDEQA/APWIEvovmoEoFEgIAAAAAAAAAAAAAAgSgAAASgAABIAhIAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAVKAAShIAAgAAAAAAAAAAACABQAAAAABKAQAFAAEoSAAIAAAADKmHNp0rEz6Rq31yGJP7Yj1mE7Fktcw6p2fid0T8WjEwbV7VZj4cPmdhysAFQABAAoAAAAAAAIACgACUJAAEAAIjoscrs/rifx/tns7K6Rv2jjPLyh2stb+RrnH2orWIjSIiI7oSDNqEgDjzOQrbjT2Z7v2z/SrvWazMTGkx0egc2dy2/XWO1HLz8mmd/wBZ6x9inAaskAAAAAAAAACAAoAAlCQABBuyeFv4sR05z6Q0rDZNeN7e7DnV5HWZ2rEBg9AAAAAACo2lhbuLrHK3H49XKtNq1/1xPdb7qtvi9jDU5UAOnIAAAAAAAAAAAAlCQABBZ7J7F/ej7Kx3bKvpe1fFETHwc79O8e1mAwbgAAAAAOXaf6M+tVQstrX9mte+ZlWtsemG/aAHbkAAAAAAAEABQABKEgACDLCxJreLR0liCr/DvFqxaOUwyU+SzW5Ok8azz8vNb1tExrE6xPVhrPG+ddSA5dAABM6RrPKBV5/Ob3sU7PWfF/xZOuda4581jb+JNunKPRqBuwQAoAAAAAAACAAoAAlCQABAABtwMxak+zPDrE8pahFWuFtGs9qJrPzh0VzFJ5Xr84USHNxHc8lX841Y53r/AChoxc/SOU70+X9qdKf5wvkrfmM3a/Ds17o/LQDuTji3oAqIAFAAAAAAABAAUAAShIAAgN2Xy1sSeHCOtp5LPAydKdN6e+XN1I7mbVZhZS9uVdI754Q68PZniv8AKFgM7utJ445a7Pw46TPrLOMnh+CPq3jntdfjGn/Ew/BH1YWyGHPSY9Jl0h2n4xX4mzI/bf5xq5cXJ3rzrrHfHFdDqbrm4jzwusfKUvzjSfFHCVZmcranPjXxR+Wk1KzuLHOA6cgAAAAAAAgAKAAJQkB15LJ7/tW4V7utmORy2/bWezXn5+S4iO5nvXP1HeM9/dKxERpEaRHQBk2AAAAAAAACY1jSQBV57I7ut6cusdzhejVG0MruTvV7M9PDLXOvlZaz9jjAaMwAAAAAQAFAAGVKTa0VjnM6MVhsrC1tN56cI9Ut5Fk7Xfg4cUpFY6fXzZg870AAAAAAAAAAAAJY4lItWazymNJZAjz+PhTS81np9YYLPa2F7MXjpwn0VjfN7GGpygDpAAAAQAkUAAXeRpu4NfPjPxUkQ9FWNIiO6Ihn5GnjgAyagAAAAAAAAAAAJAEYY9N7DtXviXn3o3n8xXTEtHda33aeOs9sAGrMAAAEABQAGWF26+9X7vQvPYXbr71fu9Cy8jXxoAZtAAAAAAAAAAAAEgCCizv61/X8L1R579e/r+Gnj9uN+mgBqyAAABH/2Q=="
+                     class="user-component__avatar user-component__avatar--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Kim</h4>
+                    <!-- <h6 class="user-component__subtitle">whatever</h6> -->
+                </div>
+    
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+
+        <div class="friends-screen__birthday">
+            <div class="friends-screen__birthday-header">
+                <span>Birthday</span>
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <div class="user-component__avatar user-component__avatar--sm birthday-avatar"><i class="fa-solid fa-cake-candles fa-2x"></i></div>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component--not-bold">Check who's birthday!</h4>
+                        <!-- <h6 class="user-component__subtitle">whatever</h6> -->
+                    </div>
+        
+                </div>
+                <div class="user-component__column">
+                    <div>
+                        <span>2</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="user-component friends">
+                <div class="friends-screen__birthday-header">
+                    <span>Friends</span>
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
+                <div class="user-component__row friend">
+                    <div class="user-component__column">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAclBMVEX///8/Ojr8/PxCPT0zLi48Nzd1cXE3MjLy8vKDgIBmYmLd3d0wKytQS0va2dk2MTGopqbQz8/k4+ORjo67ublva2v29fVjX19VUVGKh4d9eXnGxMRdWVktKChLRkacmpqvra0lICCal5fq6uq+vLyjoaEe32yhAAAEr0lEQVR4nO2ZDbOqKhSGVSDUUFLLSss8Wf//L14U8KPb7uwpmrlz531m9uwREXhZsFisPA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgf0ow48d3zwuCH/ipma+qeP3suocvielbzev2eqxWq1VVbOrOFFqK3WogKk39uylY5f3T1j4t2EXBoocy3d6vRXHd3NLyoX1nOso2JlIIqhGS7Npw3tPpLPsXZxKaD6o/Uldd95N7NU9Lzo1tQVUp6+jAqBigLKm2pXslakYTIRmZ8JkUzX3WVazf+okVEklTcxByoeQJ7BCME7U5UMr9qX1KkzZwLSU4Uq4aX6CGIfb52FPMh/dsEkL1B0wLEQ+fD3AjJPCy/WMPhHBahY6VVMJ0Qob/tkdCk1HJJ0KUwRl/8p6IU+dQhdq3ZhRELWHKGVdL2BTQna31gZDAu0nfTpTPFP44UzuXFgkbptulTdTWWZZto4aanmRtTPIXIdczG7AS9BNNgr7qmtiJ4YI1SaK8ii0Qd2eLS9ldD4nw1WjosNLjJjT6jRDlurOetLX6V6kuGCqvTFUiT5s0DMO8Lhqz1FjjbHGp2dTLgh3C6eANTlyL25tqfxFiClO7ZKJZYWbtxK/j7Od7O1POTKKEDEMitPLKMeLwCu1d2ek3m90zscdCiAlFAu9oLE4LbwxovO7AtJF2zwb1nhCz15lyURPhOh+wln/bIta4aueX815b/b27taVMb9YrTy513oXhU1O/K2RWtlxEnXExPHN3lsRWyZn6TdIcDqd4V1233Twael/I1lZ8GLHeJYRu3W2SdHSPPuMKqeImcRZkd5uFKG8L2YhnaygwvoyIjUMHXDfCnlGWfqNTGjkQcjGbYb5FhqjTuRDVUBf5Kmg0Id1MzLn6XIh2isu9/iUhvTtMr3ui1tO5j7HlLIZof3cgvhCyeeqevrG0tBIv6LL2UkRRFR+UJO1SCPv0QJxt9nQxYuWVvyDkQVaXHX17HJtxvi/EHOyTcXXx2lR1KCTsOn32TYkBNY/6FBvd/PsHoolJiYwXQszWcSdE7TrSLKKRYaWFCXMjxG4GpaSdhSjK5Tu2iAqrhOloO8vxpGa7s8+F2E3ik+0gon+TmnlyKiQzxyEbOtJkOqYbB/7B0vLKk70e8irrfXCZFvYIdrvZd3ZMcl+0t7purzHnDyP6IGicTOJTnsRxfGD2YuVUSN+9bVequ676E/ZqOvnMDyyiAnl7ESa+in8kn4URbkOUm80NTOkg3e10E/1AiHoxZjdsfkNd2b6wtNQ2OShjL6Mt9SjlZezkIyFecOVy3j5h5+gbJ7vytgURfJ6hY1zwfT318TJBNwkxX8tHIV4WS2Hzcz4XzcarRJ+i8M+uQ5T8sp9ypoKSU5HNE4EvU6aTEP25/FM9jE41lR1NxpT6p7tqJeL98dVIxyFKH2zl9aaIqtUqKu63PFgmzF8msUdym73+1+j6tvocdlHct+vhKq8CioHSc8zjvLjO+8/b++bvI7qvd3/oeV368NrxqAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+Y/wDf11FcfKGASkAAAAASUVORK5CYII="
+                             class="user-component__avatar user-component__avatar--sm"/>
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Siita</h4>
+                            <h6 class="user-component__subtitle">Our Next Mission - New Zero Waste</h6>
+                        </div>
+            
+                    </div>
+                    <div class="user-component__column"></div>
+                </div>
+
+                <div class="user-component__row friend">
+                    <div class="user-component__column">
+                        <img src="https://pbs.twimg.com/profile_images/1283958620359516160/p7zz5dxZ.jpg"
+                             class="user-component__avatar user-component__avatar--sm"/>
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Apple</h4>
+                            <h6 class="user-component__subtitle">Think Different</h6>
+                        </div>
+            
+                    </div>
+                    <div class="user-component__column"></div>
+                </div>
+
+                <div class="user-component__row friend">
+                    <div class="user-component__column">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"
+                             class="user-component__avatar user-component__avatar--sm"/>
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Tesla</h4>
+                            <h6 class="user-component__subtitle">Ride Free - That's My Motto</h6>
+                        </div>
+            
+                    </div>
+                    <div class="user-component__column"></div>
+                </div>
+
+                <div class="user-component__row friend">
+                    <div class="user-component__column">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjjSNUcbOIP4W4kA6Zm0Kkc8qvY5hqC8BvmA&usqp=CAU"
+                             class="user-component__avatar user-component__avatar--sm"/>
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Yeezy</h4>
+                            <h6 class="user-component__subtitle">Fresh for Less</h6>
+                        </div>
+            
+                    </div>
+                    <div class="user-component__column"></div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </a>
+            </li>
+
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <span class="nav__notification-dot"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="splash-screen">
+        <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+        <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <script src="https://kit.fontawesome.com/bf1c397a23.js" crossorigin="anonymous"></script>
+</body>
+</html>
